@@ -2,11 +2,6 @@
 
 #include <iostream>
 #include <string>
-#include <sstream>
-#include <filesystem>
-
-#include <direct.h>
-
 
 const int thickness = 15;
 const float paddleH = 100.0f;
@@ -241,7 +236,7 @@ void Game::Update()
 		mBallVelocity.y *= -1;
 	}
 
-	if (mPlayer1Score >= 1 || mPlayer2Score >= 1)
+	if (mPlayer1Score >= 5 || mPlayer2Score >= 5)
 	{
 		mWinCountdown = 0;
 		mGameState = GameState::PLAYER_WON;
@@ -304,8 +299,8 @@ void Game::DisplayText()
 
 void Game::ShowWinDisplay()
 {
-	std::string winText = mPlayer1Score > mPlayer2Score ? "Player 1 wins!" : "Player 2 wins!";
-	SDL_Surface* winTextSurface = TTF_RenderText_Solid(mGameFont, winText.c_str(), SDL_Color{ 255, 255, 255, 255 });
+	const char* winText = mPlayer1Score > mPlayer2Score ? "Player 1 wins!" : "Player 2 wins!";
+	SDL_Surface* winTextSurface = TTF_RenderText_Solid(mGameFont, winText, SDL_Color{ 255, 255, 255, 255 });
 
 	mWinTexture = SDL_CreateTextureFromSurface(mRenderer, winTextSurface);
 

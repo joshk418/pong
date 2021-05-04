@@ -1,9 +1,8 @@
 ﻿  Game.cpp
-  The contents of <filesystem> are available only with C++17 or later.
+C:\Development\Pong\Pong\src\Game.cpp(284,36): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Development\Pong\Pong\src\Game.cpp(285,18): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
 C:\Development\Pong\Pong\src\Game.cpp(289,36): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
 C:\Development\Pong\Pong\src\Game.cpp(290,18): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-C:\Development\Pong\Pong\src\Game.cpp(294,36): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-C:\Development\Pong\Pong\src\Game.cpp(295,18): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-C:\Development\Pong\Pong\src\Game.cpp(312,39): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-C:\Development\Pong\Pong\src\Game.cpp(313,40): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Development\Pong\Pong\src\Game.cpp(307,39): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Development\Pong\Pong\src\Game.cpp(308,40): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
   Pong.vcxproj -> C:\Development\Pong\x64\Debug\Pong.exe
